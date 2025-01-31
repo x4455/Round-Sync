@@ -1921,7 +1921,7 @@ public class FileExplorerFragment extends Fragment implements   FileExplorerRecy
                 return false;
             }
             fileItem = fileItems[0];
-            int port = allocatePort(8080, true);
+            int port = allocatePort(12080, true);
             serveIntent = new Intent(context, StreamingService.class);
             serveIntent.putExtra(StreamingService.SERVE_PATH_ARG, fileItem.getPath());
             serveIntent.putExtra(StreamingService.REMOTE_ARG, remote);

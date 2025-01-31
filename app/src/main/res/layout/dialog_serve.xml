@@ -34,7 +34,7 @@
             android:id="@+id/radio_http"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
+            android:checked="false"
             android:paddingBottom="8dp"
             android:text="@string/provider_http" />
 
@@ -42,6 +42,7 @@
             android:id="@+id/radio_webdav"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:paddingBottom="8dp"
             android:text="@string/provider_webdav" />
     </RadioGroup>
@@ -50,6 +51,7 @@
         android:id="@+id/checkbox_allow_remote_access"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="true"
         android:text="@string/allow_remote_access" />
 
     <TextView

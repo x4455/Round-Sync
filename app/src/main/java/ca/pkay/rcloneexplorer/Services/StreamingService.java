@@ -62,8 +62,8 @@ public class StreamingService extends IntentService {
         final String servePath = intent.getStringExtra(SERVE_PATH_ARG);
         final RemoteItem remote = intent.getParcelableExtra(REMOTE_ARG);
         final Boolean showNotificationText = intent.getBooleanExtra(SHOW_NOTIFICATION_TEXT, false);
-        final int protocol = intent.getIntExtra(SERVE_PROTOCOL, SERVE_HTTP);
-        final int port = intent.getIntExtra(SERVE_PORT, 8080);
+        final int protocol = intent.getIntExtra(SERVE_PROTOCOL, SERVE_WEBDAV);
+        final int port = intent.getIntExtra(SERVE_PORT, 8181);
         final Boolean allowRemoteAccess = intent.getBooleanExtra(ALLOW_REMOTE_ACCESS, false);
         final String authenticationUsername = intent.getStringExtra(AUTHENTICATION_USERNAME);
         final String authenticationPassword = intent.getStringExtra(AUTHENTICATION_PASSWORD);
